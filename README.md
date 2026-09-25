@@ -1,23 +1,37 @@
-# DistributedDataPipelineSim
+# Airline Sentiment Analytics
 
-This academic project simulates a simplified MapReduce-style data pipeline using Python.  
-Created for the **CS356: Foundations of Big Data Analytics** course.
+Python NLP project that analyzes airline customer tweets and identifies recurring themes using TF-IDF and Non-Negative Matrix Factorization (NMF).
 
-## 📌 Features
-- Custom data partitioning and memory handling
-- Simulated distributed processing logic
-- CSV data ingestion and basic error handling
-- Designed for scalability and test iterations
+Developed for CS356: Foundations of Big Data Analytics.
 
-## 🧰 Tools & Technologies
-- Python 3
-- Visual Studio Code
+## Overview
+
+The application processes 14,640 airline-related tweets, transforms unstructured text into numerical TF-IDF features, and applies NMF topic modeling to identify common themes.
+
+Each tweet is assigned a dominant theme, and the analyzed dataset is exported to a new CSV file.
+
+## Key Features
+
+- Processes 14,640 airline tweets
+- Cleans records with missing text
+- Converts text into up to 1,000 TF-IDF features
+- Applies NMF to identify 5 recurring themes
+- Displays the 10 most representative terms for each theme
+- Assigns a dominant theme to each tweet
+- Exports analyzed results to CSV
+
+## Technologies
+
+- Python
+- pandas
+- scikit-learn
+- TF-IDF
+- Non-Negative Matrix Factorization (NMF)
 - Git / GitHub
 
-## 📂 Files
-- `tweets.csv` – Sample dataset used in the simulation
-- `.py` files – Custom scripts for processing and logic execution
+## Running the Project
 
-## 🧠 Author
-**Nickolas Marquez**  
-GitHub: [@NickolasAM](https://github.com/NickolasAM)
+Install dependencies:
+
+```bash
+pip install pandas scikit-learn
